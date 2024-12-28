@@ -1,0 +1,11 @@
+           indexname            |  size
+--------------------------------+---------
+ products_pkey                  | 240 kB
+ customers_pkey                 | 456 kB
+ customers_email_key            | 1376 kB
+ btree_ind_products_name        | 536 kB
+ btree_ind_customers_email      | 1376 kB
+ hash_ind_customers_email       | 600 kB
+ brin_ind_products_price        | 24 kB
+ brin_ind_customers_signup_date | 24 kB
+(8 rows)
