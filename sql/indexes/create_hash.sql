@@ -1,0 +1,1 @@
+CREATE INDEX hash_ind_customers_email ON customers USING hash (email);
