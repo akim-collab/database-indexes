@@ -1,0 +1,65 @@
+[?1049h[22;0;0t[?1h=                                                                           QUERY  PLAN                                                                           
+-------------------------------------------------------------------------------- --------------------------------------------------------------------------------
+ Limit  (cost=9168.15..9168.18 rows=10 width=52) (actual time=9332.568..9333.002  rows=10 loops=1)
+   ->  Sort  (cost=9168.15..9174.41 rows=2504 width=52) (actual time=9332.487..9 332.775 rows=10 loops=1)
+         Sort Key: (sum(o.total_amount)) DESC
+         Sort Method: top-N heapsort  Memory: 26kB
+         ->  Finalize HashAggregate  (cost=9082.74..9114.04 rows=2504 width=52)  (actual time=9285.428..9309.530 rows=2504 loops=1)
+               Group Key: p.name
+               Batches: 1  Memory Usage: 1649kB
+               ->  Gather  (cost=8500.56..9032.66 rows=5008 width=52) (actual ti me=9086.486..9199.871 rows=7512 loops=1)
+                     Workers Planned: 2
+                     Workers Launched: 2
+                     ->  Partial HashAggregate  (cost=7500.56..7531.86 rows=2504  width=52) (actual time=9066.002..9096.889 rows=2504 loops=3)
+                           Group Key: p.name
+                           Batches: 1  Memory Usage: 1393kB
+                           Worker 0:  Batches: 1  Memory Usage: 1393kB
+:[K[H[2J[H[H[2J[H                                                                           QUERY  PLAN                                                                           
+-------------------------------------------------------------------------------- --------------------------------------------------------------------------------
+ Limit  (cost=9168.15..9168.18 rows=10 width=52) (actual time=9332.568..9333.002  rows=10 loops=1)
+   ->  Sort  (cost=9168.15..9174.41 rows=2504 width=52) (actual time=9332.487..9 332.775 rows=10 loops=1)
+         Sort Key: (sum(o.total_amount)) DESC
+         Sort Method: top-N heapsort  Memory: 26kB
+         ->  Finalize HashAggregate  (cost=9082.74..9114.04 rows=2504 width=52)  (actual time=9285.428..9309.530 rows=2504 loops=1)
+               Group Key: p.name
+               Batches: 1  Memory Usage: 1649kB
+               ->  Gather  (cost=8500.56..9032.66 rows=5008 width=52) (actual ti me=9086.486..9199.871 rows=7512 loops=1)
+                     Workers Planned: 2
+                     Workers Launched: 2
+                     ->  Partial HashAggregate  (cost=7500.56..7531.86 rows=2504  width=52) (actual time=9066.002..9096.889 rows=2504 loops=3)
+                           Group Key: p.name
+                           Batches: 1  Memory Usage: 1393kB
+                           Worker 0:  Batches: 1  Memory Usage: 1393kB
+:[K[H[2J[H[H[2J[H                                                                           QUERY  PLAN                                                                           
+-------------------------------------------------------------------------------- --------------------------------------------------------------------------------
+ Limit  (cost=9168.15..9168.18 rows=10 width=52) (actual time=9332.568..9333.002  rows=10 loops=1)
+   ->  Sort  (cost=9168.15..9174.41 rows=2504 width=52) (actual time=9332.487..9 332.775 rows=10 loops=1)
+         Sort Key: (sum(o.total_amount)) DESC
+         Sort Method: top-N heapsort  Memory: 26kB
+         ->  Finalize HashAggregate  (cost=9082.74..9114.04 rows=2504 width=52)  (actual time=9285.428..9309.530 rows=2504 loops=1)
+               Group Key: p.name
+               Batches: 1  Memory Usage: 1649kB
+               ->  Gather  (cost=8500.56..9032.66 rows=5008 width=52) (actual ti me=9086.486..9199.871 rows=7512 loops=1)
+                     Workers Planned: 2
+                     Workers Launched: 2
+                     ->  Partial HashAggregate  (cost=7500.56..7531.86 rows=2504  width=52) (actual time=9066.002..9096.889 rows=2504 loops=3)
+                           Group Key: p.name
+                           Batches: 1  Memory Usage: 1393kB
+                           Worker 0:  Batches: 1  Memory Usage: 1393kB
+:[K[H[2J[H[H[2J[H                                                                           QUERY  PLAN                                                                           
+-------------------------------------------------------------------------------- --------------------------------------------------------------------------------
+ Limit  (cost=9168.15..9168.18 rows=10 width=52) (actual time=9332.568..9333.002  rows=10 loops=1)
+   ->  Sort  (cost=9168.15..9174.41 rows=2504 width=52) (actual time=9332.487..9 332.775 rows=10 loops=1)
+         Sort Key: (sum(o.total_amount)) DESC
+         Sort Method: top-N heapsort  Memory: 26kB
+         ->  Finalize HashAggregate  (cost=9082.74..9114.04 rows=2504 width=52)  (actual time=9285.428..9309.530 rows=2504 loops=1)
+               Group Key: p.name
+               Batches: 1  Memory Usage: 1649kB
+               ->  Gather  (cost=8500.56..9032.66 rows=5008 width=52) (actual ti me=9086.486..9199.871 rows=7512 loops=1)
+                     Workers Planned: 2
+                     Workers Launched: 2
+                     ->  Partial HashAggregate  (cost=7500.56..7531.86 rows=2504  width=52) (actual time=9066.002..9096.889 rows=2504 loops=3)
+                           Group Key: p.name
+                           Batches: 1  Memory Usage: 1393kB
+                           Worker 0:  Batches: 1  Memory Usage: 1393kB
+:[K
